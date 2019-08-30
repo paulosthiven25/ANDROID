@@ -1,0 +1,19 @@
+<resources>
+
+
+
+<string name="app_name">ComponentesParte2</string>
+<string name="selecione_me">selecione me</string>
+<string name="salvar">Salvar</string>
+<string name="catan">Catan</string>
+<string name="war">War</string>
+<string name="puerto_rico">Puerto Rico</string>
+<string name="eldrich_horror">Eldrich Horror</string>
+<string name="zumbicide">Zumbicide</string>
+<string name="carcassone">Carcassone</string>
+<string name="truco">Truco</string>
+<string name="xadrez">Xadrez</string>
+<string name="dama">dama</string>
+    <string name="dungeonanddragons">DungeonAndDragons</string>
+    <string name="nenhum_jogo_seleconado">nenhum jogo selecionado</string>
+</resources>

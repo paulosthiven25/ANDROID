@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AppCarros</string>
+    <string name="veja_as_informa_es_sobre_o_seu_carro_preferido">Veja as informações sobre o seu carro preferido</string>
+    <string name="ferrari">Ferrari</string>
+    <string name="van">Van</string>
+    <string name="jipe">Jipe</string>
+    <string name="veja_informacoes_sobre_o_seu_ve_culo_preferido">Veja informacoes sobre o seu veículo preferido</string>
+    <string name="caracteristicas">Caracteristicas</string>
+    <string name="velocidade_maxima_340_km_h">Velocidade Maxima:340 km/h.</string>
+    <string name="criador_enzo_ferrari">Criador:Enzo Ferrari</string>
+    <string name="pre_o_4_milh_es">preço:4 milhões</string>
+    <string name="criador_karl_probst">criador:Karl Probst</string>
+    <string name="velocidade_maxima_190_km_h">velocidade maxima:190 Km/h.</string>
+    <string name="pre_o_70_mil">preço:70 mil</string>
+    <string name="criador_mercedesbens">criador:MercedesBens</string>
+    <string name="velocidade_maxima_150_km_h">velocidade maxima:150 Km/h.</string>
+    <string name="pre_o_30_mil">preço:30 mil</string>
+</resources>

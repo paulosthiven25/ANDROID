@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Internationallization</string>
+    <string name="nome">Name</string>
+    <string name="celular">Cellphone</string>
+    <string name="salvar">Save</string>
+</resources>

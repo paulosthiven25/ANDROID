@@ -1,0 +1,24 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal">
+
+
+        <Button
+            style="@style/FIAPButtons"
+            android:text="@string/absolute_layout"
+            android:onClick="abrirAbsoluteLayout"/>
+        <Button
+            style="@style/FIAPButtons"
+            android:text="@string/frame_layout"
+            android:onClick="abrirFrameLayout"/>
+
+    </LinearLayout>
+</LinearLayout>

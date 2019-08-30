@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    <TextView
+        style="@style/Titulo"
+        android:id="@+id/txvDescricao"/>
+
+    <TextView
+        style="@style/dados"
+        android:id="@+id/txvdataGasto"/>
+
+    <TextView
+        style="@style/dados"
+        android:id="@+id/txvTipoGasto"/>
+
+    <TextView
+        style="@style/dados"
+        android:id="@+id/txvLocalGasto"/>
+
+
+    <TextView
+        style="@style/dados"
+        android:id="@+id/txvValorGasto"/>
+
+    <TextView
+        style="@style/dados"
+        android:id="@+id/txvTipoPagamento"/>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Layouts</string>
+    <string name="estou_em_uma_posicao_absoluta">Estou em uma posicao absoluta</string>
+    <string name="absolute_layout">Absolute Layout</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="informe_seu_usuario">informe seu usuario</string>
+    <string name="informe_a_sua_senha">informe a sua senha</string>
+    <string name="login">login</string>
+</resources>

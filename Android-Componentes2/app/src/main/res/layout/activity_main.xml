@@ -1,0 +1,72 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+
+        style="@style/FIAPInput"
+        android:text="@string/selecione_me"
+        android:id="@+id/chkSelecione"/>
+
+    <Button
+        style="@style/FIAPInput"
+        android:text="@string/salvar"
+        android:onClick="salvar"/>
+
+    <RadioGroup
+        style="@style/FIAPInput"
+        android:id="@+id/rdgJogos">
+
+        <RadioButton
+            style="@style/FIAPInput"
+            android:text="@string/dungeonanddragons"
+            android:id="@+id/rdDungeonAndDragons"/>
+        <RadioButton
+            style="@style/FIAPInput"
+            android:text="@string/catan"
+            android:id="@+id/rdbCatan"/>
+        <RadioButton
+            style="@style/FIAPInput"
+            android:text="@string/war"
+            android:id="@+id/rdbWar"/>
+        <RadioButton
+            style="@style/FIAPInput"
+            android:text="@string/puerto_rico"
+            android:id="@+id/rdPueroRico"/>
+        <RadioButton
+            style="@style/FIAPInput"
+            android:text="@string/eldrich_horror"
+            android:id="@+id/rdElrich"/>
+        <RadioButton
+            style="@style/FIAPInput"
+            android:text="@string/zumbicide"
+            android:id="@+id/dZumbicide"/>
+        <RadioButton
+            style="@style/FIAPInput"
+            android:text="@string/carcassone"
+            android:id="@+id/rdCarcassone"/>
+        <RadioButton
+            style="@style/FIAPInput"
+            android:text="@string/truco"
+            android:id="@+id/rdTruco"/>
+        <RadioButton
+            style="@style/FIAPInput"
+            android:text="@string/xadrez"
+            android:id="@+id/rdXadrez"/>
+        <RadioButton
+            style="@style/FIAPInput"
+            android:text="@string/dama"
+            android:id="@+id/rdDama"/>
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar"
+        android:onClick="salvar"/>
+</LinearLayout>
