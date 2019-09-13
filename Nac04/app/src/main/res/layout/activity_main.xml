@@ -1,0 +1,62 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckBox
+        style="@style/checkbox"
+        android:id="@+id/chkCabo"
+        android:text="@string/cabo_eletrico_5mm"/>
+
+    <CheckBox
+        style="@style/checkbox"
+        android:id="@+id/chktTelha"
+        android:text="@string/telha"/>
+
+    <CheckBox
+        style="@style/checkbox"
+        android:id="@+id/chkPisoLaminado"
+        android:text="@string/piso_laminado"/>
+
+    <CheckBox
+        style="@style/checkbox"
+        android:id="@+id/chkAco"
+        android:text="@string/aco"/>
+
+    <CheckBox
+        style="@style/checkbox"
+        android:id="@+id/chkLadrilho"
+        android:text="@string/ladrilho_antiderrapante"/>
+
+    <CheckBox
+        style="@style/checkbox"
+        android:id="@+id/chkFrete"
+        android:text="Frete rapido"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/m_quadrado"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMetro"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        android:id="@+id/btnCalcular"
+        android:onClick="calcularCompra"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="0,00"
+        android:id="@+id/txtResultado"/>
+
+
+</LinearLayout>

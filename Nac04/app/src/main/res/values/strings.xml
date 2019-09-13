@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Nac04</string>
+    <string name="cabo_eletrico_5mm">cabo elétrico 5mm</string>
+    <string name="telha">telha</string>
+    <string name="piso_laminado">Piso laminado</string>
+    <string name="aco">Aço</string>
+    <string name="ladrilho_antiderrapante">Ladrilho antiderrapante</string>
+    <string name="m_quadrado">M²</string>
+    <string name="calcular">Calcular</string>
+</resources>
