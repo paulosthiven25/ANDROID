@@ -7,4 +7,7 @@
     <string name="ladrilho_antiderrapante">Ladrilho antiderrapante</string>
     <string name="m_quadrado">M²</string>
     <string name="calcular">Calcular</string>
+    <string name="preencher_campo_de_m_quadrado">Preencher campo de M²</string>
+    <string name="escolha_uma_opcao">Escolha uma opção</string>
+
 </resources>

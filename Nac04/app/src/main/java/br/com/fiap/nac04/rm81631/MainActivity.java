@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         EditText edtValor;
         TextView txtResultado;
         SharedPreferences sp;
+        SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +36,58 @@ public class MainActivity extends AppCompatActivity {
         txtResultado = findViewById(R.id.txtResultado);
 
 
+
         sp = getPreferences(MODE_PRIVATE);
+        editor= sp.edit();
+
+        retornarDados();
+
+
+
     }
 
+    public void retornarDados(){
+        chkCabo.setChecked(sp.getBoolean("Cabo",false));
+        chkAco.setChecked(sp.getBoolean("Aco",false));
+        chkTelha.setChecked(sp.getBoolean("Telha",false));
+        chkLadrilho.setChecked(sp.getBoolean("Ladrilho",false));
+        chkPiso.setChecked(sp.getBoolean("Piso",false));
+        chkFrete.setChecked(sp.getBoolean("Frete",false));
+        txtResultado.setText(Integer.toString(sp.getInt("resul",0)));
+
+    }
+
+    public void guardaInfo() {
+
+
+        editor.putBoolean("Cabo",chkCabo.isChecked());
+        editor.putBoolean("Aco",chkAco.isChecked());
+        editor.putBoolean("Telha",chkTelha.isChecked());
+        editor.putBoolean("Ladrilho",chkLadrilho.isChecked());
+        editor.putBoolean("Piso",chkPiso.isChecked());
+        editor.putBoolean("Frete",chkFrete.isChecked());
+        editor.putInt("resul",Integer.parseInt(txtResultado.getText().toString()));
+        editor.commit();
+
+
+    }
+
+
+
     public void calcularCompra(View view) {
+
         int resul=0;
         String inputMetro = edtValor.getText().toString();
 
-        if(inputMetro == "" ){
-            Toast.makeText(this,"Preencher campo de M²",Toast.LENGTH_SHORT).show();
+        if(inputMetro.equals("")){
+            Toast.makeText(this, R.string.preencher_campo_de_m_quadrado,Toast.LENGTH_SHORT).show();
+            txtResultado.setText(Integer.toString(0));
+            return;
+        }
+
+        else if (!chkCabo.isChecked() && !chkTelha.isChecked() && !chkPiso.isChecked() &&
+                !chkAco.isChecked() && !chkLadrilho.isChecked() ){
+            Toast.makeText(this, R.string.escolha_uma_opcao,Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -73,6 +117,10 @@ public class MainActivity extends AppCompatActivity {
             if (chkFrete.isChecked()){
                 resul +=resul*0.44;
             }
+
+
+            txtResultado.setText(Integer.toString(resul));
+            guardaInfo();
 
         }
     }
