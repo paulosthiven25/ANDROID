@@ -2,8 +2,12 @@ package com.example.exemplodesqlite;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MeuDB extends SQLiteOpenHelper {
 
@@ -59,4 +63,52 @@ public class MeuDB extends SQLiteOpenHelper {
     }
 
 
+    public List<Cliente> bucarTodos(){
+        List<Cliente> clientes =  new ArrayList<>();
+
+        SQLiteDatabase db = getReadableDatabase();
+
+        Cursor cursor = db.query(
+                TB_CLIENTE,
+                new String[]{"id, nome, email"},
+                null,
+                null,
+                null,
+                null,
+                "nome ASC"
+        );
+        if(cursor.moveToFirst()){
+            do{
+                Cliente cliente = new Cliente();
+                cliente.setId( cursor.getInt(0));
+                cliente.setEmail(cursor.getString(2));
+                cliente.setNome(cursor.getString(1));
+                clientes.add(cliente);
+            } while ( cursor.moveToNext() );
+        }
+        return clientes;
+    }
+
+    public Cliente buscarCliente(String email){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor =  db.query(
+                TB_CLIENTE,
+                new String[]{"id","nome","email"},
+                "email = ?",
+                new String [] {email},
+                null,
+                null,
+                null
+        );
+        if (cursor.moveToFirst()){
+            Cliente cliente = new Cliente();
+
+            cliente.setId(cursor.getInt(0));
+            cliente.setNome(cursor.getString(1));
+            cliente.setEmail(cursor.getString(2));
+        }
+        return null;
+    }
 }
+
+

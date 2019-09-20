@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Exemplo de SQLite</string>
+    <string name="inserir">Inserir</string>
+    <string name="informe_o_e_maail">Informe o e-maail:</string>
+    <string name="salvar">Salvar</string>
+    <string name="informe_o_nome">Informe o nome</string>
 </resources>
